@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-image: url(../images/seamless_paper_texture.png);
+    font-family: Verdana;
+  }
+  
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+  .topnav {
+    overflow: hidden;
+    background-color:#ffffff;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #cccccc;
+    width:100%;
+    display: flex;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #777777;
+    text-align: center;
+    padding: 30px 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    display: flex;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4aaaa5;
+    color: white;
+    float:left;
+    margin-left: 80px;
+    font-weight: bold;
+  }
+
+.detailsabout  {
+    margin: 0 auto;
+    width:960px;
+    background-color:white;
+    color:#777777;
+    padding : 40px;
+    margin-top: 50px;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    font-family: Verdana;
+}
+
+.footer , .footerportfolio {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    background-color: #4aaaa5;
+    text-align: right;
+  }
+
+
+h1 {
+    color: teal;
+}
+
+.button {
+    color:white;
+    background-color:  #4aaaa5;
+    padding:10px;
+    font-weight: bold;
+
+}
+
+.portfolio img{
+    height:200px;
+    width:200px;
+    position: relative;
+}
+.image img{ 
+    position: relative; 
+    height:200px;
+    width:200px;
+ }
+ 
+ .image h2 { 
+    position: absolute; 
+    top: 400px; 
+    margin-left: 32px;
+    width: 100%; 
+    color: #ffffff;
+    
+ }
+
+ .imageright  img{
+    height:200px;
+    width:200px;
+    float:left;
+
+ }
+
+
+
+ @media screen and (max-width: 640px) {
+  .topnav,.detailsabout {   
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .topnav {   
+    width: 100%;
+  }
+  .detailsabout {
+    width:960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav {   
+    width: 100%;
+  }
+  .detailsabout {
+    width:700px;
+  }
+}
+
+ 
